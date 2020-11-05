@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   <bean id="a1" class="com.samiksha.bean.Address">
+   <constructor-arg name="city" value="Pune"></constructor-arg>
+   <constructor-arg name="state" value="Maharashtra"></constructor-arg>
+   <constructor-arg name="country" value="India"></constructor-arg>
+   </bean>
+   
+
+
+
+
+    <bean id = "e1" class = "com.samiksha.bean.Employee" >  
+    <constructor-arg name="id" value="01"></constructor-arg>
+    <constructor-arg name="name" value="Samiksha"></constructor-arg> 
+    <constructor-arg name="address" ref="a1"></constructor-arg>
+   </bean>
+   
+   
+</beans>
